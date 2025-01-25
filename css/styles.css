@@ -108,6 +108,19 @@ img {
     letter-spacing: 0.02em;
     color: #2e2f42;
 }
+.active {
+    position: relative;
+}
+.active::after {
+    content: "";
+    position: absolute;
+    background-color: #404BBF;
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+}
 
 .header-nav-link:hover,
 .header-nav-link:focus {
@@ -139,10 +152,13 @@ img {
 .hero {
     background-color: #2e2f42;
     padding: 188px 0;
-    background-image: url(../images/people-office1.jpg);
+    background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+    url(../images/people-office1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    max-width: 1440px;
+    margin: 0 auto;
     
 }
 
@@ -188,19 +204,12 @@ img {
 /* #endregion */
 
 /* #region section Our strenghts */
-.strengths {
-    
-    /* width: 1128px; */
-}
+.strengths {}
 
 .strengths-list {
-    /* padding-left: 156px;
-    padding-right: 156px; */
     display: flex;
     gap: 24px;
-    
 }
-
 
 .strengths-item {
     width: calc((100% - 72px) / 4);
