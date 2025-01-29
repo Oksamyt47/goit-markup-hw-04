@@ -440,7 +440,8 @@ img {
 /* #region Footer */
 .footer {
     background-color: #2e2f42;
-    padding-left: 156px;
+    padding: 100px 0 100px 156px;
+    
 }
 
 .footer-container {
